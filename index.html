@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Сайт астролога Татьяны Никольской" />
+		<meta name="robots" content="noodp" />
+		<meta name="keywords" content="gulp, webpack, nunjucks, sass, webp" />
+		<meta name="theme-color" content="#fff" />
+		<meta
+			name="apple-mobile-web-app-status-bar-style"
+			content="black-translucent"
+		/>
+		<link
+			rel="shortcut icon"
+			href="img/favicons/favicon.ico"
+			type="image/x-icon"
+		/>
+		<link
+			rel="icon"
+			sizes="16x16"
+			href="img/favicons/favicon-16x16.png"
+			type="image/png"
+		/>
+		<link
+			rel="icon"
+			sizes="32x32"
+			href="img/favicons/favicon-32x32.png"
+			type="image/png"
+		/>
+		<link
+			rel="apple-touch-icon-precomposed"
+			href="img/favicons/apple-touch-icon-precomposed.png"
+		/>
+		<link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="img/favicons/apple-touch-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="img/favicons/apple-touch-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="img/favicons/apple-touch-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="img/favicons/apple-touch-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="img/favicons/apple-touch-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="img/favicons/apple-touch-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="img/favicons/apple-touch-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="img/favicons/apple-touch-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="167x167"
+			href="img/favicons/apple-touch-icon-167x167.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="img/favicons/apple-touch-icon-180x180.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="1024x1024"
+			href="img/favicons/apple-touch-icon-1024x1024.png"
+		/>
+		
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+		/>
+
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+		<link rel="stylesheet" href="./styles/main.css" />
+		<title>Gulp-Mitravel</title>
+	</head>
+
+	<body>
+		<div class="page__wrapper">
+			<!-- prettier-ignore -->
+			<header class="header">
+	<div class="container">
+		<div class="header__wrapper">
+			<div class="socials-wrapper">
+				<ul class="social">
+	<li class="social-item">
+		<a href="/" class="social-link">
+			<svg class="social-icon icon-telg">
+				<use xlink:href="./img/sprites/s-mono.svg#telg"></use>
+			</svg>
+		</a>
+	</li>
+	<li class="social-item">
+		<a href="/" class="social-link">
+			<svg class="social-icon icon-tiktok">
+				<use xlink:href="./img/sprites/s-mono.svg#tiktok"></use>
+			</svg>
+		</a>
+	</li>
+	<li class="social-item">
+		<a href="/" class="social-link">
+			<svg class="social-icon icon-yzen">
+				<use xlink:href="./img/sprites/s-mono.svg#yzen"></use>
+			</svg>
+		</a>
+	</li>
+	<li class="social-item">
+		<a href="/" class="social-link">
+			<svg class="social-icon icon-ytube">
+				<use xlink:href="./img/sprites/s-mono.svg#ytube"></use>
+			</svg>
+		</a>
+	</li>
+	<li class="social-item">
+		<a href="/" class="social-link">
+			<svg class="social-icon icon-fb">
+				<use xlink:href="./img/sprites/s-mono.svg#fb"></use>
+			</svg>
+		</a>
+	</li>
+	<li class="social-item">
+		<a href="/" class="social-link">
+			<svg class="social-icon icon-vk">
+				<use xlink:href="./img/sprites/s-mono.svg#vk"></use>
+			</svg>
+		</a>
+	</li>
+	<li class="social-item">
+		<a href="/" class="social-link">
+			<svg class="social-icon icon-inst">
+				<use xlink:href="./img/sprites/s-mono.svg#inst"></use>
+			</svg>
+		</a>
+	</li>
+</ul>
+
+			</div>
+			<div class="menu-burger">
+				<div class="burger">
+					<span class="burger__line"></span>
+					<span class="burger__line"></span>
+					<span class="burger__line"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+			
+<main class="main">
+	<!-- prettier-ignore -->
+	<section class="welcome">
+	<div class="welcome__top">
+		<div class="container">
+			<div class="welcome__inner">
+				<h1 class="title">Мы – учителям!</h1>
+				<div class="welcome__quote">
+					<figure>
+						<blockquote cite="https://www.huxley.net/bnw/four.html">
+							<p>
+								«Вся гордость учителя в учениках, в росте посеянных им семян...»
+							</p>
+						</blockquote>
+						<figcaption>Д. Менделеев</figcaption>
+					</figure>
+				</div>
+				<a href="/" class="welcome__btn btn">
+					<svg class="btn-icon">
+						<use xlink:href="./img/sprites/s-mono.svg#ytube"></use>
+					</svg>
+					<span> Смотреть все поздравления </span>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="welcome__bottom">
+		<div class="container">
+			<div class="welcome__inner">
+				<ul class="welcome__menu menu">
+					<li class="menu__item">
+						<a class="menu__item-link" href="/">
+							<img src="./img/icon1.svg" alt="" />
+							<span>Поздравления</span></a
+						>
+					</li>
+					<li class="menu__item">
+						<a class="menu__item-link" href="/"
+							><img src="./img/icon2.svg" alt="" /><span>О Проекте</span></a
+						>
+					</li>
+					<li class="menu__item">
+						<a class="menu__item-link" href="/"
+							><img src="./img/icon3.svg" alt="" /><span>Акции</span></a
+						>
+					</li>
+					<li class="menu__item">
+						<a class="menu__item-link" href="/"
+							><img src="./img/icon4.svg" alt="" /><span>Открытки</span></a
+						>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+	<section class="worker">
+	<div class="container">
+		<div class="worker__grid">
+			<div class="worker__column card">
+				<div class="card__inner user">
+					<div class="user__info">
+						<div class="user__avatar avatar">
+							<img src="./img/avatar1.png" alt="" class="avatar__img" />
+						</div>
+						<div class="user__data">
+							<div class="user__name">
+								<span>Владимир</span> <span>Потанин</span>
+							</div>
+							<div class="user__position">
+								Директор департамента молодежи и спорта
+							</div>
+						</div>
+					</div>
+					<p class="user__text">
+						Я занимаюсь благотворительностью больше 20 лет. Это - важная часть
+						моей жизни. В 1999 году я создал Благотворительный фонд, чтобы
+						сделатьпроектыв сферах лет. Это - важная часть моей жизни. В 1999
+						году я создал Благотворительный фонд, чтобы сделатьпроектыв сферах
+					</p>
+				</div>
+			</div>
+			<div class="worker__column card">
+				<div class="card__inner user">
+					<div class="user__info">
+						<div class="user__avatar avatar">
+							<img src="./img/avatar2.png" alt="" class="avatar__img" />
+						</div>
+						<div class="user__data">
+							<div class="user__name">
+								<span>Мария</span> <span>Павловская</span>
+							</div>
+							<div class="user__position">
+								Директор департамента молодежи и спорта
+							</div>
+						</div>
+					</div>
+					<p class="user__text">
+						Я занимаюсь благотворительностью больше 20 лет. Это - важная часть
+						моей жизни. В 1999 году я создал Благотворительный фонд, чтобы
+						сделатьпроектыв сферах лет. Это - важная часть моей жизни. В 1999
+						году я создал Благотворительный фонд, чтобы сделатьпроектыв сферах
+					</p>
+				</div>
+			</div>
+			<div class="worker__column card">
+				<div class="card__inner user">
+					<div class="user__info">
+						<div class="user__avatar avatar">
+							<img src="./img/avatar1.png" alt="" class="avatar__img" />
+						</div>
+						<div class="user__data">
+							<div class="user__name">
+								<span>Федор</span> <span>Емельяненко</span>
+							</div>
+							<div class="user__position">
+								Директор департамента молодежи и спорта
+							</div>
+						</div>
+					</div>
+					<p class="user__text">
+						Я занимаюсь благотворительностью больше 20 лет. Это - важная часть
+						моей жизни. В 1999 году я создал Благотворительный фонд, чтобы
+						сделатьпроектыв сферах лет. Это - важная часть моей жизни.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+	<section class="congra">
+	<div class="container">
+		<div class="congra__wrapper">
+			<h2 class="title title-h2">Поздравления</h2>
+			<div class="swiper slider">
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide frame">
+						<img class="frame__img" src="./img/image1.jpg" alt="" />
+					</div>
+					<div class="swiper-slide frame">
+						<img class="frame__img" src="./img/image2.jpg" alt="" />
+					</div>
+					<div class="swiper-slide frame">
+						<img class="frame__img" src="./img/image1.jpg" alt="" />
+					</div>
+					<div class="swiper-slide frame">
+						<img class="frame__img" src="./img/image3.jpg" alt="" />
+					</div>
+					<div class="swiper-slide frame">
+						<img class="frame__img" src="./img/image4.jpg" alt="" />
+					</div>
+					<div class="swiper-slide frame">
+						<img class="frame__img" src="./img/image2.jpg" alt="" />
+					</div>
+					<div class="swiper-slide frame">
+						<img class="frame__img" src="./img/image3.jpg" alt="" />
+					</div>
+				</div>
+				<div class="swiper-pagination pagination"></div>
+				<div class="swiper-button-prev btn-prev"></div>
+				<div class="swiper-button-next btn-next"></div>
+			</div>
+		</div>
+	</div>
+</section>
+<script>
+	const swiper = new Swiper(".swiper", {
+		slidesPerView: 1,
+		spaceBetween: 10,
+		loop: true,
+		breakpoints: {
+			768: {
+				slidesPerView: 2,
+				spaceBetween: 10,
+			},
+			998: {
+				slidesPerView: 3,
+				spaceBetween: 10,
+			},
+			1200: {
+				slidesPerView: 4,
+				spaceBetween: 0,
+			},
+			1300: {
+				slidesPerView: 5,
+				spaceBetween: 0,
+			},
+		},
+		autoplay: {
+			delay: 2500,
+			disableOnInteraction: true,
+		},
+		pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+	});
+</script>
+
+	<section class="teacher">
+	<div class="container">
+		<div class="teacher__wrapper">
+			<h2 class="title title-h2">Поздравь учителя !</h2>
+			<p class="subtitle">Сделай поздравительную открытку</p>
+		</div>
+		<div class="slider-demo slider">
+			<ul class="slider__list">
+				<li class="slider__list-item">
+					<a href="/" class="slider__link">
+						<img src="./img/postcard1.jpg" alt="" />
+					</a>
+				</li>
+				<li class="slider__list-item">
+					<a href="/" class="slider__link">
+						<img src="./img/postcard2.jpg" alt="" />
+					</a>
+				</li>
+				<li class="slider__list-item">
+					<a href="/" class="slider__link">
+						<img src="./img/postcard3.jpg" alt="" />
+					</a>
+				</li>
+			</ul>
+			<div class="pagination-demo">
+				<div class="pagination-demo__row">
+					<span
+						class="pagination-demo__bullet pagination-demo__bullet--action"
+					></span>
+					<span class="pagination-demo__bullet"></span>
+					<span class="pagination-demo__bullet"></span>
+					<span class="pagination-demo__bullet"></span>
+					<span class="pagination-demo__bullet"></span>
+					<span class="pagination-demo__bullet"></span>
+					<span class="pagination-demo__bullet"></span>
+				</div>
+			</div>
+			<div class="navigations">
+				<div class="navigations__prev"></div>
+				<div class="navigations__next"></div>
+			</div>
+		</div>
+		<div class="upload-wrapper">
+			<form class="upload-container" method="POST" action="send.php">
+				<svg class="upload-image">
+					<use xlink:href="./img/sprites/s-mono.svg#upload"></use>
+				</svg>
+				<div>
+					<input id="file-input" type="file" name="file" multiple />
+					<label for="file-input">Загрузить фото</label>
+				</div>
+			</form>
+			<p class="upload-desc">Формат - .jpg, .jpeg, .png, .tiff, .bmp</p>
+		</div>
+	</div>
+</section>
+
+</main>
+
+			<footer class="footer">
+	<div class="container">
+		<div class="footer__wrapper">
+			<p class="copyright">Мы-<span>Учителям</span>!</p>
+			<div class="footer__menu">
+				<ul>
+					<li><a href="/">Поздравления</a></li>
+					<li><a href="/">Акции</a></li>
+					<li><a href="/">Открытки</a></li>
+				</ul>
+			</div>
+			<div class="footer__contacts contact">
+				<a class="contact__link" href="tel:+70000000000">+7 (000) 000-00-00</a>
+				<a class="contact__link" href="mailto:mail@mail.ru">mail@mail.ru</a>
+				<div class="footer__socials">
+					<ul class="social">
+	<li class="social-item">
+		<a href="/" class="social-link">
+			<svg class="social-icon icon-telg">
+				<use xlink:href="./img/sprites/s-mono.svg#telg"></use>
+			</svg>
+		</a>
+	</li>
+	<li class="social-item">
+		<a href="/" class="social-link">
+			<svg class="social-icon icon-tiktok">
+				<use xlink:href="./img/sprites/s-mono.svg#tiktok"></use>
+			</svg>
+		</a>
+	</li>
+	<li class="social-item">
+		<a href="/" class="social-link">
+			<svg class="social-icon icon-yzen">
+				<use xlink:href="./img/sprites/s-mono.svg#yzen"></use>
+			</svg>
+		</a>
+	</li>
+	<li class="social-item">
+		<a href="/" class="social-link">
+			<svg class="social-icon icon-ytube">
+				<use xlink:href="./img/sprites/s-mono.svg#ytube"></use>
+			</svg>
+		</a>
+	</li>
+	<li class="social-item">
+		<a href="/" class="social-link">
+			<svg class="social-icon icon-fb">
+				<use xlink:href="./img/sprites/s-mono.svg#fb"></use>
+			</svg>
+		</a>
+	</li>
+	<li class="social-item">
+		<a href="/" class="social-link">
+			<svg class="social-icon icon-vk">
+				<use xlink:href="./img/sprites/s-mono.svg#vk"></use>
+			</svg>
+		</a>
+	</li>
+	<li class="social-item">
+		<a href="/" class="social-link">
+			<svg class="social-icon icon-inst">
+				<use xlink:href="./img/sprites/s-mono.svg#inst"></use>
+			</svg>
+		</a>
+	</li>
+</ul>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+		</div>
+		<script src="./js/main.js"></script>
+		<script src="./js/vendor.js"></script>
+	</body>
+</html>
